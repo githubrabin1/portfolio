@@ -1,6 +1,4 @@
 /* GENERAL */
-
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 *{
@@ -22,14 +20,12 @@ p {
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -39,7 +35,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  
 }
 
 .nav-links {
@@ -70,7 +65,6 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
-
 #hamburger-nav {
   display: none;
 }
@@ -150,7 +144,6 @@ a:hover {
 }
 
 /* SECTIONS */
-
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -164,7 +157,6 @@ section {
 }
 
 /* PROFILE SECTION */
-
 #profile {
   display: flex;
   justify-content: center;
@@ -177,7 +169,7 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
-  }
+}
 
 .section__text {
   align-self: center;
@@ -210,14 +202,12 @@ section {
 }
 
 /* ICONS */
-
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -229,18 +219,9 @@ section {
   transition: all 300ms ease;
   padding: 1rem;
   border-radius: 2rem;
-  white-space: nowrap; /* Prevent text wrapping */
-  text-align: center; /* Center-align text within the button */
+  white-space: nowrap;
+  text-align: center;
 }
-/*
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-*/
 
 .btn-color-1,
 .btn-color-2 {
@@ -275,7 +256,6 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
   position: relative;
 }
@@ -305,11 +285,13 @@ section {
   right: -5rem;
   bottom: 2.5rem;
 }
+
 .arrow1 {
   position: absolute;
   right: -5rem;
   top: 2.5rem;
 }
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -332,9 +314,6 @@ section {
 }
 
 /* EXPERIENCE SECTION */
-
-
-
 .project-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -349,7 +328,6 @@ section {
 }
 
 /* PROJECTS SECTION */
-
 #projects {
   position: relative;
 }
@@ -376,7 +354,6 @@ section {
 }
 
 /* CONTACT */
-
 #contact {
   display: flex;
   justify-content: center;
@@ -385,23 +362,22 @@ section {
   margin-bottom: 20px;
 }
 
-
-
 #contact form{
     max-width: 600px;
     margin: 0 auto;
     background: #f8f7f7; 
     padding: 30px;
-    /* justify-content: center; */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 #contact label{
   font-size: 1rem;
     font-weight: bold;
     display: block;
     text-align: left;
 }
+
 #contact form input,
 #contact form textarea {
     width: 90%;
@@ -413,14 +389,11 @@ section {
     resize: none;
 }
 
-
-
-
 /* FOOTER SECTION */
 .social-container{
   text-align: center;
-
 }
+
 .social-container a {
   color: #000000;
   font-size: 1.5em;
@@ -428,7 +401,8 @@ section {
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.social-container a :hover{
+
+.social-container a:hover{
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
@@ -445,13 +419,174 @@ footer p {
   text-align: center;
 }
 
-/*
-:root{
-  color-scheme:light dark;
+/* THEME: LIGHT/DARK MODE */
+body.dark-theme {
+  background-color: #181818;
+  color: #f1f1f1;
 }
 
-body{
-  background-color: light dark(#fff,#444);
-  color: light-dark(#444,#fff);
+body.dark-theme nav,
+body.dark-theme .details-container,
+body.dark-theme .contact-info-upper-container {
+  background: #232323;
+  border-color: #444;
 }
-  */
+
+body.dark-theme .nav-links a,
+body.dark-theme .logo,
+body.dark-theme .menu-links a {
+  color: #f1f1f1;
+}
+
+body.dark-theme .btn,
+body.dark-theme .btn-color-1,
+body.dark-theme .btn-color-2 {
+  background: #232323;
+  color: #f1f1f1;
+  border-color: #888;
+}
+
+body.dark-theme .btn:hover,
+body.dark-theme .btn-color-1:hover,
+body.dark-theme .btn-color-2:hover {
+  background: #444;
+  color: #fff;
+}
+
+body.dark-theme .project-card {
+  background: #232323;
+}
+
+body.dark-theme .project-title {
+  color: #fff;
+}
+
+body.dark-theme .menu-links {
+  background: #232323;
+}
+
+body.dark-theme .hamburger-icon span {
+  background-color: #f1f1f1;
+}
+
+body.dark-theme p {
+  color: #ccc;
+}
+
+body.dark-theme .icon {
+  filter: brightness(0.8) invert(0.8);
+}
+
+/* DARK THEME - CONTACT FORM */
+body.dark-theme #contact form {
+  background: #232323;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme #contact label {
+  color: #f1f1f1;
+}
+
+body.dark-theme #contact form input,
+body.dark-theme #contact form textarea {
+  background: #181818;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+body.dark-theme #contact form input:focus,
+body.dark-theme #contact form textarea:focus {
+  outline: none;
+  border-color: #888;
+}
+
+body.dark-theme #contact h2 {
+  color: #f1f1f1;
+}
+
+/* DARK THEME - FOOTER */
+body.dark-theme footer {
+  background: #232323;
+}
+
+body.dark-theme footer p {
+  color: #ccc;
+}
+
+body.dark-theme .social-container a {
+  color: #f1f1f1;
+}
+
+body.dark-theme .social-container a:hover {
+  color: #888;
+}
+
+body.dark-theme footer .nav-links a {
+  color: #f1f1f1;
+}
+
+body.dark-theme footer .nav-links a:hover {
+  color: #888;
+}
+
+/* DARK THEME - COLOR CONTAINER (PROJECTS) */
+body.dark-theme .color-container {
+  background: #232323;
+  border-color: #555;
+}
+
+body.dark-theme h1.title {
+  color: #f1f1f1;
+}
+
+body.dark-theme h2 {
+  color: #f1f1f1;
+}
+
+body.dark-theme h3 {
+  color: #f1f1f1;
+}
+
+/* PROJECT DETAILS MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.2);
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+body.dark-theme .modal-content {
+  background: #232323;
+  color: #f1f1f1;
+}
+
+body.dark-theme .close-modal {
+  color: #f1f1f1;
+}
