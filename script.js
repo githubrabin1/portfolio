@@ -5,22 +5,28 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
-//   function validateForm() {
-//     var name = document.getElementById("name").value;
-//     var email = document.getElementById("email").value;
-//     var message = document.getElementById("message").value;
+  function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
 
-//     if (name === "" || email === "" || message === "") {
-//         alert("Please fill in all fields before submitting.");
-//         return false; 
-//     }
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields before submitting.");
+        return false; 
+    }
 
-//     //alert("Your message has been sent." + name );
+    alert("Your message has been sent." + name );
     
-//     document.querySelector("form").reset();
+    document.querySelector("form").reset();
 
-//     return false; 
-// }
+    return false; 
+}
+// Simple approach - always go to top on reload
+window.addEventListener('load', function() {
+    if (window.location.hash) {
+        window.location.href = window.location.pathname;
+    }
+});
 
 
   

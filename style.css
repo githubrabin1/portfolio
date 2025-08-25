@@ -305,7 +305,11 @@ section {
   right: -5rem;
   bottom: 2.5rem;
 }
-
+.arrow1 {
+  position: absolute;
+  right: -5rem;
+  top: 2.5rem;
+}
 .details-container {
   padding: 1.5rem;
   flex: 1;

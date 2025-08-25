@@ -1,4 +1,3 @@
-<?php include 'form.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,14 +51,16 @@
             <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
           </div>
           <div id="socials-container">
-            <a href="https://www.linkedin.com" target="_blank">
+            <a href="https://www.linkedin.com/in/rabin-ghimire-6ba472265/?trk=opento_sprofile_details" target="_blank">
                 <img src="./assets/linkedin.png"  alt="My LinkedIn profile"  class="icon"  />  </a>
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com/githubrabin1" target="_blank">
                 <img src="./assets/github.png"  alt="My Github profile"  class="icon" /></a>
           </div>
         </div>
       </section>
+      
       <section id="about">
+        
         <p class="section__text1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -81,12 +82,13 @@
             </div>
             <div class="text-container">
               <p>
-              Hello! I’m Rabin, a passionate student eager to learn and explore various programming languages such as HTML, CSS , javascript and Git. I enjoy solving problems and gradually building my skills by working on projects that help me understand both front-end and back-end development. With a strong curiosity and dedication, I’m committed to turning ideas into practical applications while continuously growing my knowledge. When I’m not coding, I love spending time with my friends.
-                <br>Let’s create something amazing together!</br>
+              Hello! I'm Rabin, a passionate student eager to learn and explore various programming languages such as HTML, CSS , javascript and Git. I enjoy solving problems and gradually building my skills by working on projects that help me understand both front-end and back-end development. With a strong curiosity and dedication, I'm committed to turning ideas into practical applications while continuously growing my knowledge. When I'm not coding, I love spending time with my friends.
+                <br>Let's create something amazing together!</br>
               </p>
             </div>
           </div>
         </div>
+         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow1" onclick="location.href='./#nav'" style="transform: rotate(180deg);" />
         <img src="./assets/arrow.png"alt="Arrow icon"class="icon arrow"onclick="location.href='./#projects'"/>
       </section>
       
@@ -135,43 +137,37 @@
 
           </div>
         </div>
-      
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow1" onclick="location.href='./#about'" style="transform: rotate(180deg);" />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#footer'" />
       </section>
       
       <section id="contact">
         <h1 class="title">Get in Touch</h1>
         <div class="form-container">
          
-            <?php if ($formSuccess): ?>
-              <div class="alert alert-success">
-                Thank you for your message! We'll get back to you soon.
-              </div> 
-            <?php endif; ?>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contact" method="post" >
-              <!-- onsubmit="return validateForm()" -->
+            <form action="#contact" onsubmit="return validateForm()" method="post">
               <h2>Contact Me</h2>
               <label for="name">Name *</label>
-              <input type="text" id="name" name="name" value="<?php echo $name; ?>" required>
-              <span class="error"><?php echo $nameErr; ?></span>
+              <input type="text" id="name" name="name" required>
+              <span class="error"></span>
     
               <label for="email">Email *</label>
-              <input type="email" id="email" name="email" value="<?php echo $email; ?>" required>
-              <span class="error"><?php echo $emailErr; ?></span>
+              <input type="email" id="email" name="email" required>
+              <span class="error"></span>
     
-               <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" value="<?php echo $subject; ?>">
+               <!-- <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject"> -->
      
               <label for="message">Message *</label>
-              <textarea id="message" name="message" rows="5" required><?php echo $message; ?></textarea>
-              <span class="error"><?php echo $messageErr; ?></span>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="error"></span>
     
               <button class="btn btn-color-2 contact-btn" type="submit">Send Message</button>
             </form>
           </div>
         
     </section>
-      <footer>
+      <footer id="footer">
         <div class="social-container">
 
           <a href="https://www.facebook.com/rabinghimrie" target="_blank" alt="Facebook"><i class="fab fa-facebook-f"></i></a>
