@@ -4,7 +4,7 @@
 
 <p>This "Responsive Portfolio" is a web application project created using HTML, CSS and JavaScript.</p>
 
-<a href="www.rabinghimire1.com.np" target="_blank"></a>
+<a href="www.rabinghimire1.com.np" target="_blank">Portfolio link</a>
 
 </div> <br/><br/>
 
