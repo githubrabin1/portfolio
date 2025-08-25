@@ -4,7 +4,7 @@
 
 <p>This "Responsive Portfolio" is a web application project created using HTML, CSS and JavaScript.</p>
 
-<a href="www.rabinghimire1.com.np" target="_blank"><strong>➥ Live Demo</strong></a>
+<a href="www.rabinghimire1.com.np" target="_blank">s</a>
 
 </div> <br/><br/>
 
@@ -43,19 +43,17 @@
 ## Screenshots
 
 ### Home Page
-![](https://github.com/githubrabin1/myportfolio/blob/main/assets/preview1.png)
+![](https://github.com/githubrabin1/portfolio/blob/main/assets/preview1.png)
 
 ### About Page
-![](https://github.com/githubrabin1/myportfolio/blob/main/assets/preview2.png)
+![](https://github.com/githubrabin1/portfolio/blob/main/assets/preview2.png)
 
-### Experience in Technology Page
-![](https://github.com/githubrabin1/myportfolio/blob/main/assets/preview3.png)
 
 ### Project's Page
-![](https://github.com/githubrabin1/myportfolio/blob/main/assets/preview4.png)
+![](https://github.com/githubrabin1/portfolio/blob/main/assets/preview4.png)
 
 ### Contact Page
-![](https://github.com/githubrabin1/myportfolio/blob/main/assets/preview5.png)
+![](https://github.com/githubrabin1/portfolio/blob/main/assets/preview5.png)
 
 
 ## Tech Stack
